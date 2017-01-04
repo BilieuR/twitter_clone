@@ -34,6 +34,13 @@ gem 'bootstrap-sass', '3.3.7'
 # Use bcrypt for password protection
 gem 'bcrypt', '3.1.11'
 
+# Use Faker for fake users
+gem 'faker', '1.6.3'
+
+# Use Will_paginate for pagination
+gem 'will_paginate', '3.1.5'
+
+gem 'bootstrap-will_paginate', '0.0.10'
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
