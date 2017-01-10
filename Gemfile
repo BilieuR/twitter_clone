@@ -39,8 +39,13 @@ gem 'faker', '1.6.3'
 
 # Use Will_paginate for pagination
 gem 'will_paginate', '3.1.5'
-
 gem 'bootstrap-will_paginate', '0.0.10'
+
+# Use CarrierWave and others for image uploading, resizing and viewing
+gem 'carrierwave', '0.11.2'
+gem 'mini_magick', '4.5.1'
+gem 'fog',         '1.38.0'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
@@ -52,6 +57,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
+  gem "better_errors"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
